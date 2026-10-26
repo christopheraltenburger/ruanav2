@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruanita – Kids Ruana Brand Plan</title>
+<style>
+:root{
+  --oat:#f6efe3; --ink:#2b2420; --boyaca:#c8312b; --cordillera:#2f6f8f; --sol:#f2b134;
+  --frailejon:#6d8a4a; --paramo:#8a7a68; --card:#fffaf1; --line:#e3d6bf;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--oat);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3,.sans{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+header{background:var(--boyaca);color:#fff;padding:56px 0 40px}
+header h1{font-size:clamp(2.4rem,8vw,4.5rem);margin:0;letter-spacing:-1px}
+header p{max-width:620px;font-size:1.15rem;margin:.5rem 0 0}
+.stripe{height:10px;background:linear-gradient(90deg,var(--sol) 0 33%,var(--cordillera) 33% 66%,var(--boyaca) 66%)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.9rem;margin:0 0 .3rem}
+h3{margin:.2rem 0}
+.lead{color:#6b5d50;margin-top:0}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card svg{width:100%;height:auto;display:block;background:#efe5d2;border-radius:10px}
+.tag{display:inline-block;font:600 .75rem system-ui;padding:2px 8px;border-radius:99px;background:var(--sol);color:#2b2420;margin-right:4px}
+.tag.lead-t{background:#e8dfd0}
+.tag.ok{background:#cfe3b8}
+.sw{display:flex;gap:10px;flex-wrap:wrap}
+.sw div{width:120px;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--card);font:.8rem system-ui}
+.sw i{display:block;height:60px}
+.sw span{display:block;padding:6px 8px}
+table{width:100%;border-collapse:collapse;font:.9rem system-ui;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{background:#efe5d2}
+.tw{overflow-x:auto}
+ol.steps{counter-reset:s;list-style:none;padding:0}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 56px;margin:10px 0;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:12px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--boyaca);color:#fff;font:700 1rem/32px system-ui;text-align:center}
+ol.steps b{font-family:system-ui}
+.note{background:#fff3d6;border-left:5px solid var(--sol);padding:10px 14px;border-radius:6px;font-size:.95rem}
+pre{background:#2b2420;color:#f6efe3;padding:14px;border-radius:10px;overflow-x:auto;white-space:pre-wrap;font:.85rem/1.5 ui-monospace,monospace}
+footer{padding:30px 0;color:#6b5d50;font-size:.9rem}
+</style>
+</head>
+<body>
+
+<!-- ===== Reusable garment drawings. Colors come from CSS variables set on each <svg>. ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="bodyclip"><path d="M112 62 Q150 44 188 62 L276 238 Q150 272 24 238 Z"/></clipPath>
+  </defs>
+
+  <!-- Ruanita Clásica: open-front poncho, sherpa collar, hem stripes -->
+  <symbol id="ruana" viewBox="0 0 300 300">
+    <path d="M112 62 Q150 44 188 62 L276 238 Q150 272 24 238 Z" fill="var(--body)"/>
+    <g clip-path="url(#bodyclip)">
+      <rect x="0" y="196" width="300" height="12" fill="var(--s1)"/>
+      <rect x="0" y="212" width="300" height="7" fill="var(--s2)"/>
+      <rect x="0" y="223" width="300" height="12" fill="var(--s1)"/>
+      <rect x="0" y="239" width="300" height="40" fill="var(--body)"/>
+      <path d="M0 150 L300 150" stroke="var(--s2)" stroke-width="0" />
+    </g>
+    <path d="M150 74 L150 255" stroke="rgba(0,0,0,.18)" stroke-width="2" stroke-dasharray="5 4"/>
+    <g fill="var(--collar)">
+      <ellipse cx="150" cy="66" rx="48" ry="17"/>
+      <circle cx="108" cy="72" r="9"/><circle cx="124" cy="80" r="9"/><circle cx="142" cy="84" r="9"/>
+      <circle cx="158" cy="84" r="9"/><circle cx="176" cy="80" r="9"/><circle cx="192" cy="72" r="9"/>
+    </g>
+    <circle cx="150" cy="104" r="5" fill="var(--s1)"/>
+    <circle cx="150" cy="104" r="2" fill="rgba(0,0,0,.3)"/>
+    <path d="M80 150 q10 -14 22 0" stroke="rgba(0,0,0,.15)" fill="none" stroke-width="2"/>
+  </symbol>
+
+  <!-- Páramo: winter, with hood -->
+  <symbol id="paramo" viewBox="0 0 300 300">
+    <path d="M108 70 Q150 52 192 70 L282 248 Q150 284 18 248 Z" fill="var(--body)"/>
+    <g clip-path="url(#bodyclip)" transform="translate(-6 8) scale(1.04)">
+      <rect x="0" y="206" width="300" height="10" fill="var(--s1)"/>
+      <rect x="0" y="220" width="300" height="6" fill="var(--s2)"/>
+    </g>
+    <path d="M150 90 L150 262" stroke="rgba(0,0,0,.2)" stroke-width="2" stroke-dasharray="5 4"/>
+    <path d="M100 76 Q96 14 150 12 Q204 14 200 76 Q150 96 100 76Z" fill="var(--body)"/>
+    <path d="M112 74 Q112 28 150 26 Q188 28 188 74 Q150 90 112 74Z" fill="var(--collar)"/>
+    <g fill="var(--collar)"><circle cx="114" cy="40" r="8"/><circle cx="186" cy="40" r="8"/><circle cx="108" cy="58" r="9"/><circle cx="192" cy="58" r="9"/></g>
+    <path d="M124 76 Q150 92 176 76" stroke="var(--body)" stroke-width="8" fill="none"/>
+    <circle cx="150" cy="120" r="5" fill="var(--s1)"/>
+  </symbol>
+
+  <!-- Mini: baby stroller version, shorter, rounded -->
+  <symbol id="mini" viewBox="0 0 300 300">
+    <path d="M114 78 Q150 62 186 78 Q268 130 262 214 Q150 246 38 214 Q32 130 114 78Z" fill="var(--body)"/>
+    <path d="M44 190 Q150 222 256 190" stroke="var(--s1)" stroke-width="12" fill="none"/>
+    <path d="M42 208 Q150 240 258 208" stroke="var(--s2)" stroke-width="7" fill="none"/>
+    <g fill="var(--collar)"><ellipse cx="150" cy="82" rx="42" ry="15"/>
+      <circle cx="112" cy="88" r="9"/><circle cx="130" cy="96" r="9"/><circle cx="150" cy="99" r="9"/><circle cx="170" cy="96" r="9"/><circle cx="188" cy="88" r="9"/></g>
+    <path d="M150 100 L150 226" stroke="rgba(0,0,0,.18)" stroke-width="2" stroke-dasharray="5 4"/>
+  </symbol>
+
+  <!-- Logo mark: sun over a ruana-shaped mountain -->
+  <symbol id="logo" viewBox="0 0 120 120">
+    <circle cx="60" cy="42" r="22" fill="var(--sol)"/>
+    <path d="M10 100 L46 52 L62 72 L78 46 L110 100 Z" fill="var(--boyaca)"/>
+    <path d="M10 100 L110 100" stroke="var(--cordillera)" stroke-width="8"/>
+    <path d="M10 111 L110 111" stroke="var(--sol)" stroke-width="4"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <svg viewBox="0 0 120 120" style="width:84px;height:84px;background:#fff;border-radius:50%;padding:10px"><use href="#logo" width="120" height="120"/></svg>
+    <h1>Ruanita</h1>
+    <p>Colombian ruanas for little Swiss explorers. Wrapped in Boyacá, made for the Alps.</p>
+  </div>
+</header>
+<div class="stripe"></div>
+
+<div class="wrap">
+
+<section>
+  <h2>1 · The idea</h2>
+  <p class="lead">The ruana, but for kids, in a market that has nothing like it.</p>
+  <p>A ruana is an open-front wool wrap worn over the shoulders. The kids' version in your photo is a hooded ruana-poncho with a soft collar that goes over a stroller or car coat with no zips or arm fights. Swiss parents love practical, natural-fibre outdoor wear (think Wald-Kita, Spielplatz, Wanderung), so the pitch is strong:</p>
+  <ul>
+    <li><b>Easy:</b> on in 2 seconds, no wriggling into sleeves.</li>
+    <li><b>Layers well:</b> works over a pullover in autumn/spring and over a jacket in winter.</li>
+    <li><b>Story:</b> a real Colombian tradition from Boyacá (Sogamoso, Nobsa, Iza) with real artisan partners.</li>
+  </ul>
+  <div class="note"><b>Safety design rules (important in Switzerland/EU):</b>
+    no drawstrings or cords at hood/neck (the one in your photo has one; EN 14682 is the standard to design against),
+    securely sewn closures only, short or no fringe, open sides so car-seat harnesses go <i>under</i> the garment, never between child and seat. Get every style lab-tested before selling (see step 7).</div>
+</section>
+
+<section>
+  <h2>2 · Brand</h2>
+  <p class="lead">Name: <b>Ruanita</b> (“little ruana”). Easy to say in German, French, Italian and Spanish, and instantly hints at the product.</p>
+  <ul>
+    <li><b>Tagline:</b> “Wrapped in Boyacá. Made for the Alps.” / DE: “Eingepackt in Kolumbien. Gemacht für die Berge.”</li>
+    <li><b>Voice:</b> warm, a bit playful, proud of the craft. Short Spanish words sprinkled in (abrigo, ¡vamos!, mi sol).</li>
+    <li><b>Colombian touch:</b> colours from the sign in your photo, a sun-and-mountain logo, a “Hecho con manos de Boyacá” hangtag with the artisan's name, product names from Colombian landscapes.</li>
+    <li><b>Culture note:</b> the Muisca-style motifs are heritage designs. Use them only with artisan partners' blessing and credit them. Otherwise stay with simple stripes.</li>
+    <li><b>To check:</b> “Ruanita” is my suggestion, I have not run a trademark search. Check Swissreg/IGE, EUIPO, and the .ch domain before printing anything.</li>
+  </ul>
+  <h3>Palette</h3>
+  <div class="sw">
+    <div><i style="background:#c8312b"></i><span>Boyacá red<br>#C8312B</span></div>
+    <div><i style="background:#2f6f8f"></i><span>Cordillera blue<br>#2F6F8F</span></div>
+    <div><i style="background:#f2b134"></i><span>Sol yellow<br>#F2B134</span></div>
+    <div><i style="background:#6d8a4a"></i><span>Frailejón green<br>#6D8A4A</span></div>
+    <div><i style="background:#f6efe3"></i><span>Avena oat<br>#F6EFE3</span></div>
+    <div><i style="background:#8a7a68"></i><span>Páramo taupe<br>#8A7A68</span></div>
+  </div>
+  <div style="margin-top:16px;display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+    <svg viewBox="0 0 120 120" style="width:110px;height:110px"><use href="#logo" width="120" height="120"/></svg>
+    <div class="card sans" style="text-align:center"><div style="font:700 2rem system-ui;color:#c8312b;letter-spacing:-1px">Ruanita</div><div style="font-size:.7rem;letter-spacing:3px">COLOMBIA · SUIZA</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>3 · Sample products (mock-ups)</h2>
+  <p class="lead">Flat illustrations, not final tech packs. Colours are swappable.</p>
+  <div class="grid">
+    <div class="card">
+      <svg viewBox="0 0 300 300" style="--body:#8fb6c9;--s1:#f6efe3;--s2:#c8312b;--collar:#f3ead8"><use href="#ruana" width="300" height="300"/></svg>
+      <h3>Clásica <span class="tag">Autumn · Spring</span></h3>
+      <p><b>Cielo (sky blue)</b>. Merino-blend wool or a wool-cotton mix, soft lining at the neck, Boyacá stripes on the hem. Ages 1–6. Sizes: 80–98, 104–116.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 300 300" style="--body:#d9a441;--s1:#2f6f8f;--s2:#f6efe3;--collar:#f3ead8"><use href="#ruana" width="300" height="300"/></svg>
+      <h3>Clásica <span class="tag">Autumn · Spring</span></h3>
+      <p><b>Sol (sun yellow)</b>. Same cut, sunny colourway. Great for visibility on dark Swiss November mornings.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 300 300" style="--body:#8a7a68;--s1:#f2b134;--s2:#c8312b;--collar:#efe5d2"><use href="#paramo" width="300" height="300"/></svg>
+      <h3>Páramo <span class="tag">Winter</span></h3>
+      <p><b>Taupe</b>. Heavier wool outer, organic-cotton or recycled fleece lining, hood <u>without</u> cord, wind-flap. Ages 1–6.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 300 300" style="--body:#6d8a4a;--s1:#f6efe3;--s2:#f2b134;--collar:#f3ead8"><use href="#paramo" width="300" height="300"/></svg>
+      <h3>Páramo <span class="tag">Winter</span></h3>
+      <p><b>Frailejón green</b>, named after the fuzzy páramo plant. Waterproof treatment (PFC-free) as an option.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 300 300" style="--body:#c8312b;--s1:#f6efe3;--s2:#f2b134;--collar:#f3ead8"><use href="#mini" width="300" height="300"/></svg>
+      <h3>Mini Cochecito <span class="tag">0–18 m</span></h3>
+      <p><b>Boyacá red</b>. Stroller wrap just like the photo: short, no hood, big soft collar. Perfect first gift, and the lowest-risk first product.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 300 300" style="--body:#f6efe3;--s1:#2f6f8f;--s2:#c8312b;--collar:#d9c9a8;border:1px solid #e3d6bf"><use href="#mini" width="300" height="300"/></svg>
+      <h3>Mini Alpaca <span class="tag">Future</span></h3>
+      <p><b>Natural cream</b>. Baby alpaca from Peru, undyed, premium gift version (see roadmap).</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:28px">Hangtag and label (concept)</h3>
+  <div class="grid">
+    <div class="card sans" style="background:#c8312b;color:#fff;text-align:center">
+      <svg viewBox="0 0 120 120" style="width:70px;height:70px;background:#fff;border-radius:50%;padding:6px;margin:0 auto"><use href="#logo" width="120" height="120"/></svg>
+      <div style="font:700 1.4rem system-ui;margin-top:8px">Ruanita</div>
+      <div style="font-size:.8rem">Hecho con manos de Boyacá<br>Tejido por: ______ (artisan name)</div>
+      <div style="font-size:.7rem;margin-top:8px;opacity:.85">100% Wolle / lana · Waschen 30° Wollprogramm</div>
+    </div>
+    <div class="card">
+      <b>Packaging:</b> a reusable cotton drawstring bag (adult-only use, not for kids), a postcard with the artisan's story and a Spanish word of the day. Small, cheap, and memorable.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>4 · Alpaca roadmap</h2>
+  <ol>
+    <li><b>Phase 1 (launch):</b> wool/merino blend. Proves demand with lower cost and risk.</li>
+    <li><b>Phase 2 (after ~6–12 months):</b> limited “Edición Andina” in baby alpaca or alpaca-merino blend from a Peruvian knitter. Alpaca is warm, light, not itchy, and Swiss parents pay for it. Expect a clearly higher price.</li>
+    <li><b>Phase 3:</b> traceable alpaca (herder cooperative), and a Colombian-woven alpaca capsule if you find a workshop.</li>
+  </ol>
+  <p>Note: Peru and Bolivia, not Colombia, are the alpaca heartland. A Colombian workshop can weave the cloth if the yarn is sourced from Peru. I did not find a Colombian alpaca supplier, so this is worth asking the Boyacá workshops.</p>
+</section>
+
+<section>
+  <h2>5 · Manufacturers to approach</h2>
+  <p class="lead">From my web search. <span class="tag lead-t">Lead</span> = found online, nothing verified. None published MOQs or prices for kids' items, so <b>all terms must be confirmed by email</b>.</p>
+  <div class="tw"><table>
+    <tr><th>Name</th><th>Where</th><th>What</th><th>Why / caution</th></tr>
+    <tr><td><a href="https://connectamericas.com/company/ruanas-de-nobsa">Ruanas de Nobsa</a></td><td>Nobsa, Boyacá, CO</td><td>Hand-loom pure sheep-wool ruanas, custom designs</td><td>Most authentic story. Unclear on export, kids' sizes, and certifications. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://www.elespectador.com/moda-e-industria/la-ruana-con-mariposas-bordadas-que-usa-gustavo-petro-asi-la-crearon/">Tejidos Rebancá</a></td><td>Iza / Sogamoso, CO</td><td>Hand-spun, hand-woven, embroidered ruanas</td><td>Premium craft, high price (one custom adult piece ~1.2M COP). Good for a limited capsule. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://burelfactory.com/en-es/products/poncho-espinhado">Burel Factory</a></td><td>Serra da Estrela, PT</td><td>Wool cloth and ponchos, made to order</td><td>Shows European wool cloth and a poncho are feasible. No OEM info found. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://mom.maison-objet.com/en/brand/15768/schooloflifeprojects/products/collection/12973/100-organic-woolen-blankets-made-on-150-year-old-machines">SchoolOfLifeProjects</a></td><td>Portugal</td><td>Organic wool blankets made in-house, wool to blanket</td><td>Possible fabric source. Custom-order ability unknown. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://paris.premierevision.com/partner/1dae074c-2da4-f011-8e60-6045bd8d9978/apu-kuntur-alpaca">Apu Kuntur Alpaca</a></td><td>Peru</td><td>Family factory, alpaca knitwear for Europe; runs from under 100 pcs</td><td>Best volume fit for alpaca. Confirm private label. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://paris.premierevision.com/partner/f370409b-4a4b-f011-8f7d-6045bdf3af56/scandinavian-supply-peru-s-a-c-">Scandinavian Supply Peru</a></td><td>Peru</td><td>Alpaca products for Europe; 100–500 pcs listed</td><td>Peruvian-Norwegian, so European standards are familiar. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://pietrastudio.com/sourcing/suppliers/tu-alpaca-peru">Tu Alpaca Peru</a></td><td>Peru</td><td>Baby alpaca and blend garments, customizable base styles, ~30 days</td><td>Small company (listed). Good for quick alpaca samples. <span class="tag lead-t">Lead</span></td></tr>
+    <tr><td><a href="https://www.b2match.com/e/ctd-match26/opportunities/UGFydGljaXBhdGlvbk9wcG9ydHVuaXR5OjI2NjYxMA==">“Sacred Valley” (b2match listing)</a></td><td>Peru</td><td>Private label, MOQ from 50 pcs per model (self-reported)</td><td>Lowest MOQ claimed. Verify it is a real company first. <span class="tag lead-t">Lead</span></td></tr>
+  </table></div>
+  <p><b>My suggested setup:</b></p>
+  <ul>
+    <li><b>Core line (Clásica, Páramo, Mini):</b> European wool fabric + cut-and-sew in Portugal (or nearby). Short transit to Switzerland, easier to audit, and EU-grade testing is routine there. I did not find a specific kids' cut-and-sew factory in this search, so look through Portuguese directories and sourcing platforms like Pietra or Sewport.</li>
+    <li><b>“Edición Boyacá” capsule:</b> 20–50 hand-loomed pieces from a Boyacá workshop, as a story piece and community tie-in.</li>
+    <li><b>“Edición Andina”:</b> alpaca from Peru, later.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6 · Step-by-step: from idea to first sale</h2>
+  <ol class="steps">
+    <li><b>Validate (weeks 1–3).</b> Show these mock-ups to ~20 parents (Kita group chats, Instagram, friends with Colombian roots). Ask: would you buy, at what price (try CHF 79–129), which colour? Collect emails on a simple waitlist page.</li>
+    <li><b>Lock the basics (weeks 2–4).</b> Choose name, check trademark and domain (.ch), decide legal form (Einzelfirma is the simplest start; GmbH later). Ask a Swiss tax advisor or your canton's office about VAT registration and customs import.</li>
+    <li><b>Write a one-page spec per product (weeks 3–5).</b> Photo of your reference, size chart, fabric idea, colours, “no cords” rule, target cost. A freelance pattern maker (Schnittmacherin) can turn this into a proper tech pack for a few hundred CHF.</li>
+    <li><b>Shortlist 6–8 suppliers (weeks 4–6).</b> Use the table above plus 2–3 Portuguese cut-and-sew factories. Email them using the template below. Compare answers on MOQ, sample cost, lead time, certifications, and communication speed.</li>
+    <li><b>Order prototypes (weeks 6–12).</b> Order 1 sample each from your top 2–3 suppliers. Typical sample cost is a few hundred CHF per style in total (my rough assumption; get real quotes). Ask for fabric swatches first. They are cheap and show the wool quality.</li>
+    <li><b>Test with real kids (weeks 12–14).</b> Stroller, playground, rain, a wash cycle. Is it itchy, heavy, does the collar flop, can the child get out of it? Take photos. Adjust and order the second round if needed.</li>
+    <li><b>Safety and certification (weeks 12–16).</b> Get the fabric tested for harmful substances (OEKO-TEX Standard 100 class I for babies is the common benchmark) and the design checked against EN 14682 (cords). Confirm the exact Swiss legal requirements with the Swiss authorities (SECO / Federal Food Safety and Veterinary Office or a testing lab such as SGS or Hohenstein). I could not confirm the Swiss rules from my search, so don't skip this.</li>
+    <li><b>Costing and price (week 16).</b> Landed cost = unit price + shipping + customs/VAT + testing split per piece + packaging. Swiss retail margins usually want ~2.5–3× landed cost for wholesale-and-retail, ~2× for direct sales. Check duties and origin rules (EFTA has trade agreements with Colombia and Peru. Verify the current status).</li>
+    <li><b>Pre-order launch (weeks 16–20).</b> Sell a first batch of 50–150 pieces by pre-order (Shopify or similar, TWINT and card). Pre-orders cut financial risk and tell you the winning colours.</li>
+    <li><b>Produce and ship (weeks 20–32).</b> Place the production order, do a pre-shipment check (photos or a local inspector), ship to Switzerland, deliver. Collect reviews and photos for the next season.</li>
+    <li><b>Grow.</b> Add the Boyacá capsule, markets (Weihnachtsmärkte, Kinder-Flohmärkte), concept stores, then the alpaca line.</li>
+  </ol>
+
+  <h3>Email template for suppliers</h3>
+<pre>Subject: Sample and MOQ request – children's wool ruana (Swiss brand, Ruanita)
+
+Hello [Name],
+
+I am founding Ruanita, a Swiss children's brand based on the Colombian ruana
+(open-front wool wrap/poncho), ages 0–6, for the Swiss market.
+
+Could you tell me:
+1. Do you make private-label children's garments of this type? (photo attached)
+2. MOQ per style and per colour, and your price range at 100 / 300 pieces
+3. Fabric options (wool, merino blend, alpaca blend) and OEKO-TEX / other certificates
+4. Sample cost and lead time, and cost to ship samples to Switzerland
+5. Can you work without drawstrings and meet EN 14682?
+6. Production lead time and payment terms
+
+I can send a tech pack and size chart. Thank you!
+
+[Your name] · [Phone] · [Website]</pre>
+  <div class="note"><b>Money tip:</b> do not pay a full production order upfront to an unknown supplier. Start with paid samples, then a small first order, and use payment terms such as 30% deposit / 70% before shipping. Watch out for suppliers who refuse to send photos or videos of their factory.</div>
+</section>
+
+<section>
+  <h2>7 · What I could and couldn't verify</h2>
+  <ul>
+    <li>Verified from search results: the suppliers exist online and what their own pages say they offer.</li>
+    <li>Not found: prices, MOQs for kids' ruanas, Swiss legal requirements, and trademark availability of “Ruanita”.</li>
+    <li>Cost, margin and timeline figures above are my rough assumptions for planning, not quotes.</li>
+  </ul>
+</section>
+
+</div>
+<footer><div class="wrap">Ruanita concept · draft, October 2026</div></footer>
+</body>
+</html>
