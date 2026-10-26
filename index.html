@@ -42,7 +42,7 @@ ol.steps b{font-family:system-ui}
 .note{background:#fff3d6;border-left:5px solid var(--sol);padding:10px 14px;border-radius:6px;font-size:.95rem}
 pre{background:#2b2420;color:#f6efe3;padding:14px;border-radius:10px;overflow-x:auto;white-space:pre-wrap;font:.85rem/1.5 ui-monospace,monospace}
 footer{padding:30px 0;color:#6b5d50;font-size:.9rem}
-</style>
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.pair figure{margin:0}.pair figcaption{font:.75rem system-ui;text-align:center;color:#6b5d50;margin-top:2px}</style>
 </head>
 <body>
 
@@ -236,125 +236,197 @@ footer{padding:30px 0;color:#6b5d50;font-size:.9rem}
 <section>
   <h2>3 · Product shots (flat-lay) and playful prints</h2>
   <p class="lead">Laid flat, a kids' ruana is basically a square with a hole for the head, so we can show the whole print from above.</p>
-  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:center">
-    <div class="card"><svg viewBox="0 0 300 300" role="img" aria-label="Carrera flat-lay">
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="card"><svg viewBox="0 0 300 300" role="img" aria-label="Carrera flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   <g font-family="system-ui" font-size="9" fill="#2b2420"><text x="150" y="14" text-anchor="middle">≈ 80 cm</text><path d="M24 19 H276" stroke="#2b2420" stroke-width="1" marker-start="url(#ar)" marker-end="url(#ar)"/></g>
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-carrera)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#23395b" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#23395b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#23395b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#f6efe3"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg></div>
-    <div>
-      <h3>Anatomy of the flat-lay</h3>
+</svg>
+      <h3>Variant A · “Abierta” (open front)</h3>
       <ul>
-        <li><b>Square body:</b> about 70–80 cm for ages 1–3 and 85–90 cm for ages 3–6 (my rough guess, to be set with a pattern maker).</li>
-        <li><b>Head hole at the top:</b> with a soft sherpa/fleece collar around it, no cord.</li>
-        <li><b>Front opening:</b> a slit from the hole to the hem, closed with 2–3 sewn-on snaps, so it works over a stroller seat or jacket.</li>
-        <li><b>Contrast edge binding:</b> a colour that frames the print and hides raw edges.</li>
-        <li><b>Print:</b> one all-over playful pattern per design, with a repeating motif so any cut looks good.</li>
-      </ul>
-    </div>
+        <li>Head hole at the top, slit down to the hem, 2–3 sewn-on snaps.</li>
+        <li>Works over a stroller seat or jacket, easy to open when it gets warm.</li>
+      </ul></div>
+    <div class="card"><svg viewBox="0 0 300 300" role="img" aria-label="Carrera flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  <g font-family="system-ui" font-size="9" fill="#2b2420"><text x="150" y="14" text-anchor="middle">≈ 80 cm</text><path d="M24 19 H276" stroke="#2b2420" stroke-width="1" marker-start="url(#ar)" marker-end="url(#ar)"/></g>
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-carrera)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#23395b" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#f6efe3"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg>
+      <h3>Variant B · “Cerrada” (closed, like yours at home)</h3>
+      <ul>
+        <li>Square blanket with the head hole in the middle and <b>no cut</b>, so the back is covered too.</li>
+        <li>Simpler to make (no snaps) and your son already loves it.</li>
+        <li><b>Check:</b> the hole must be big enough to pull over a toddler's head easily (my rough guess is at least 18–20 cm across, soft edge, no elastic). Test with real kids before production.</li>
+      </ul></div>
   </div>
-  <h3 style="margin-top:24px">Six launch designs</h3>
+  <h3 style="margin-top:24px">Shared construction</h3>
+  <ul>
+    <li><b>Square body:</b> about 70–80 cm for ages 1–3 and 85–90 cm for ages 3–6 (my rough guess, to be set with a pattern maker).</li>
+    <li><b>Soft sherpa/fleece collar</b> around the hole, no cord.</li>
+    <li><b>Contrast edge binding</b> that frames the print and hides raw edges.</li>
+    <li><b>All-over playful print</b> with a repeating motif so any cut looks good.</li>
+  </ul>
+  <h3 style="margin-top:24px">Six launch designs, each in both variants</h3>
   <div class="grid">
     <div class="card">
-      <svg viewBox="0 0 300 300" role="img" aria-label="Carrera flat-lay">
+      <div class="pair"><figure><svg viewBox="0 0 300 300" role="img" aria-label="Carrera flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-carrera)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#23395b" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#23395b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#23395b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#f6efe3"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg>
+</svg><figcaption>Abierta</figcaption></figure><figure><svg viewBox="0 0 300 300" role="img" aria-label="Carrera flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-carrera)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#23395b" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#f6efe3"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg><figcaption>Cerrada</figcaption></figure></div>
       <h3>Carrera</h3>
       <p>Cars, football & stars.</p>
     </div>
     <div class="card">
-      <svg viewBox="0 0 300 300" role="img" aria-label="¡Vamos, Chiva! flat-lay">
+      <div class="pair"><figure><svg viewBox="0 0 300 300" role="img" aria-label="¡Vamos, Chiva! flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-chiva)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#c8312b" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#c8312b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#c8312b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#fffaf1" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#fffaf1"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg>
+</svg><figcaption>Abierta</figcaption></figure><figure><svg viewBox="0 0 300 300" role="img" aria-label="¡Vamos, Chiva! flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-chiva)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#c8312b" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#fffaf1" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#fffaf1"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg><figcaption>Cerrada</figcaption></figure></div>
       <h3>¡Vamos, Chiva!</h3>
       <p>Colombian party bus.</p>
     </div>
     <div class="card">
-      <svg viewBox="0 0 300 300" role="img" aria-label="Selva flat-lay">
+      <div class="pair"><figure><svg viewBox="0 0 300 300" role="img" aria-label="Selva flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-selva)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#2f5d2a" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#2f5d2a" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#2f5d2a" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#f6efe3"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg>
+</svg><figcaption>Abierta</figcaption></figure><figure><svg viewBox="0 0 300 300" role="img" aria-label="Selva flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-selva)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#2f5d2a" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#f6efe3"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg><figcaption>Cerrada</figcaption></figure></div>
       <h3>Selva</h3>
       <p>Toucans & jungle leaves.</p>
     </div>
     <div class="card">
-      <svg viewBox="0 0 300 300" role="img" aria-label="¡Gol! flat-lay">
+      <div class="pair"><figure><svg viewBox="0 0 300 300" role="img" aria-label="¡Gol! flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-gol)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#f2b134" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#f2b134" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#f2b134" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#fffaf1" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#fffaf1"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg>
+</svg><figcaption>Abierta</figcaption></figure><figure><svg viewBox="0 0 300 300" role="img" aria-label="¡Gol! flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-gol)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#f2b134" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#fffaf1" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#fffaf1"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg><figcaption>Cerrada</figcaption></figure></div>
       <h3>¡Gol!</h3>
       <p>Football-mad little ones.</p>
     </div>
     <div class="card">
-      <svg viewBox="0 0 300 300" role="img" aria-label="Cohete flat-lay">
+      <div class="pair"><figure><svg viewBox="0 0 300 300" role="img" aria-label="Cohete flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-cohete)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#e8423c" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#e8423c" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#e8423c" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#f6efe3"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg>
+</svg><figcaption>Abierta</figcaption></figure><figure><svg viewBox="0 0 300 300" role="img" aria-label="Cohete flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-cohete)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#e8423c" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#f6efe3" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#f6efe3"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg><figcaption>Cerrada</figcaption></figure></div>
       <h3>Cohete</h3>
       <p>Rockets, planes & stars.</p>
     </div>
     <div class="card">
-      <svg viewBox="0 0 300 300" role="img" aria-label="Llama Drama flat-lay">
+      <div class="pair"><figure><svg viewBox="0 0 300 300" role="img" aria-label="Llama Drama flat-lay, top">
   <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
   
   <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
   <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-llama)"/>
   <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#c8312b" stroke-width="10"/>
-  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/>
-  <g fill="#c8312b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
+  <path d="M150 104 V266" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-dasharray="6 5"/><g fill="#c8312b" stroke="#fff" stroke-width="1.5"><circle cx="150" cy="130" r="5"/><circle cx="150" cy="178" r="5"/><circle cx="150" cy="226" r="5"/></g>
   <circle cx="150" cy="78" r="30" fill="none" stroke="#fffaf1" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
   <circle cx="150" cy="78" r="27" fill="#fffaf1"/>
   <circle cx="150" cy="78" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
-</svg>
+</svg><figcaption>Abierta</figcaption></figure><figure><svg viewBox="0 0 300 300" role="img" aria-label="Llama Drama flat-lay, center">
+  <defs><marker id="ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#2b2420"/></marker></defs>
+  
+  <rect x="29" y="35" width="252" height="252" rx="14" fill="rgba(0,0,0,.14)"/>
+  <rect x="24" y="24" width="252" height="252" rx="14" fill="url(#p-llama)"/>
+  <rect x="29" y="29" width="242" height="242" rx="10" fill="none" stroke="#c8312b" stroke-width="10"/>
+  
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#fffaf1" stroke-width="14" stroke-dasharray="0 11.5" stroke-linecap="round"/>
+  <circle cx="150" cy="150" r="27" fill="#fffaf1"/>
+  <circle cx="150" cy="150" r="19" fill="#efe5d2" stroke="rgba(0,0,0,.25)" stroke-width="1.5"/>
+</svg><figcaption>Cerrada</figcaption></figure></div>
       <h3>Llama Drama</h3>
       <p>Llamas & hearts (alpaca-line preview).</p>
     </div>
